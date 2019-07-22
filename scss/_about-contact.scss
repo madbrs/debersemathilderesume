@@ -1,0 +1,38 @@
+ .contact__section{
+    width:100%;
+    height:75vh;
+}
+ 
+  .contact__container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    margin-bottom:2rem;  
+  }
+  .contact__container .contact__link{
+    display:flex; 
+    margin:1rem;
+  }
+  .contact__link{
+
+    width:30vw;
+    height:20vh;
+    background-color:#20202a;
+
+  }
+
+ 
+  @media (min-width:900px){
+    .contact__link{
+      margin:1rem;
+      width:5vw;
+      height:10vh;
+    }
+
+}
+  
+  
+ 
+ 
+
+  
