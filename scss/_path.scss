@@ -11,7 +11,7 @@ font-family:'rounded';
 }
 
 .path__container__title{
-font-size:1.2rem;
+font-size:$font-title-s;
 color:$text-color-first;
 text-transform: uppercase;
 padding-bottom:2rem;
@@ -22,7 +22,7 @@ color:$text-color-third;
 }
 
 .path__title{
-font-size:1.2rem;
+font-size:$font-title-s;
 }
 
 .path__location{
