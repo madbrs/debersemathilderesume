@@ -48,7 +48,7 @@
 .video__content h1{
     font-family: 'azonix';
     font-weight: 100;
-    font-size:15vw;
+    font-size:$home-title-l;
     padding-bottom:2rem;
     
 }
@@ -56,7 +56,7 @@
 
 .video__content p{
     font-family:'azonix';
-    font-size:6vw;
+    font-size:$home-title-s;
     display:block;
     padding-bottom:2rem;
 }
@@ -72,7 +72,7 @@
 }
 
 
-@media (min-width:400px){
+@media (min-width:900px){
 .video__container{
  width:100%;
 display: flex;
@@ -90,14 +90,14 @@ align-content: center;
 .video__content h1{
     font-family: 'azonix';
     font-weight: 100;
-    font-size:30vw;
+    font-size:$home-title-l-2;
     padding-bottom:2rem;
     
 }
 
 }
 
-@media (min-width:900px){
+@media (min-width:500px){
     .video__container{
         width:100%;
        display: flex;
@@ -115,13 +115,13 @@ align-content: center;
        .video__content h1{
         font-family: 'azonix';
         font-weight: 100;
-        font-size:10vh;
+        font-size:$home-title-l-2;
         padding-bottom:2rem;
         
     }
     
     .video__content p{
-        font-size:4vh;
+        font-size:3rem;
         display:block;
         padding-bottom:2rem;
     }
