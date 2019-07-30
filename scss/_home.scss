@@ -4,12 +4,12 @@ height:100vh;
 
 .bg--dark{
 background-color:transparent;
-font-family: 'azonix';
+font-family: $font-family-first;
 }
 
 .navbar-dark .navbar-nav .nav-link{
-font-size:$font-size-s;
-color:white;
+font-size:$menu-font-size;
+color:$text-color-first;
 }
 
 @media (min-width:400px){

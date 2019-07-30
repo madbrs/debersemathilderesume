@@ -2,20 +2,34 @@
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/root";
+
 $bkg-color-first:#000000;
-$bkg-color-second:#ffffff;
-$element-color:hsl(212, 87%, 51%);
+$square-bkg-color:hsl(214, 97%, 13%);
+$overlay-video:hsl(0, 0%, 0%);
+$element-color:hsl(214, 98%, 25%);
+$border-color:#20202a;
 $text-color-first:#ffffff;
 $text-color-second:#8b8b8b;
 $text-color-third:#d3d1d1;
-$text-color-forth:#000000;
-$border-color:#20202a;
-$font-title-l:3.5rem;
-$font-title-m:2.5rem;
-$font-title-s:1.2rem;
-$font-size-l:2rem;
-$font-size-m:1.2rem;
-$font-size-s:0.86rem;
+$menu-font-size:0.86rem;
+$welcome-title-l:2.5rem;
+$welcome-title-m:1.2rem;
+$welcome-title-s:0.86rem;
+$section-title-l:1.8rem;
+$section-title-m:1.2rem;
+$p-size:0.86rem;
+$path-title-size:1rem;
+$path-year-size:0.86rem;
+$path-location-size:0.86rem;
+$asset-title-m:1rem;
+$asset-title-s:0.86rem;
+$button-font-size:0.90rem;
+$pjc-title-l:1.2rem;
+$pjc-dot:2.5rem;
+$font-family-first:'azonix';
+$font-family-second:'rounded';
+
+
 
 @import "../scss/assets";
 @import "../scss/skill";

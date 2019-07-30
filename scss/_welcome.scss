@@ -1,8 +1,3 @@
-
-.home__section{ 
-height:100vh;
-color:white;
-}
 .video__container{
 width:400px;
 display:flex;
@@ -17,7 +12,7 @@ text-align:center;
 position:absolute;
 width:100%;
 height:100vh;
-overflow: hidden; 
+overflow: hidden;
 }
 
 .fullscreen-video__wrapper video{
@@ -29,41 +24,45 @@ min-height:100%;
 height:100vh;
 width:100vw;
 position:absolute;
-background-color:#000000;
+background-image:url('../img/mobilewelcome.jpg');
+background-repeat:no-repeat;
 z-index:1;
-opacity:0.5;
+opacity:1;
 }
 
 .video__content{
-z-index:2;
 width:70%;
 top:50%;
 margin:1rem;
+z-index:2;
 }
 
 .video__content h1{
-font-family: 'azonix';
+font-family: $font-family-first;
+font-size:$welcome-title-l;
 font-weight: 100;
-font-size:$font-title-m;
 padding-bottom:2rem;    
 }
 
 .video__content p{
-font-family:'azonix';
-font-size:$font-title-s;
+font-family:$font-family-first;
+font-size:$welcome-title-m;
 display:block;
 padding-bottom:2rem;
 }
 
 .btn--video{
-font-family:'rounded';
+font-family:$font-family-second;
+color:$text-color-first;
+font-size:$welcome-title-s;
 background:none;
-color:#ffffff;
-font-size:5vw;
 text-decoration:none;  
 }
 
-@media (min-width:500px){
+
+// RESPONSIVE
+
+@media (min-width:360px){
 .video__container{
 width:100%;
 display: flex;
@@ -78,14 +77,6 @@ width:100%;
 height:auto;
 margin:1rem;
 }
-
-.btn--video{
-font-family:'rounded';
-background:none;
-color:#ffffff;
-font-size:1vw;
-text-decoration:none;
-}
 }
 
 @media (min-width:900px){
@@ -95,13 +86,17 @@ display: flex;
 justify-items: center;
 align-items:center;
 align-content: center;
-
 }
 .video__content{
 z-index:2;
 width:100%;
 height:auto;
 margin:1rem;
+}
+.video__overlay{
+background-image:none;
+background-color:$overlay-video;
+opacity:0.8;
 }
 }
 

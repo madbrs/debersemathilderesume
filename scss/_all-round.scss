@@ -9,17 +9,18 @@ src: url('../fonts/rounded_elegance/Rounded_Elegance.ttf') format('truetype');
 }
 body{
 background-color:$bkg-color-first;
-color:$text-color-first; 
+color:$text-color-first;
+scroll-behavior: smooth;
 }
 
 h2{
-font-size:$font-size-m;
-font-family: 'azonix';
+font-size:$section-title-l;
+font-family: $font-family-first;
 margin:2rem 1rem 1rem 1rem;
 }
 
 p{
-font-family: 'rounded';
+font-family: $font-family-second;
 }
 
 .header__section{
@@ -38,34 +39,35 @@ font-size:1.5rem;
 }
 
 // square section
+
 .square {
 position:relative;
 width:8rem;
 height:8rem;
-color: hsl(217, 94%, 45%);
-animation: wheelHueColor 10s infinite;
+color: $square-bkg-color;
 background-color: currentColor;
+// animation: wheelHueColor 10s infinite;
 }
-
-@supports (background-blend-mode: overlay) {
-.square  {
-background-image: linear-gradient(20deg,$bkg-color-second 20%,$bkg-color-first 80%);
-background-blend-mode: overlay;
-}
-}
-
-@keyframes wheelHueColor {
-from, to { color: hsl(214, 68%, 27%); }
-10%      { color: rgb(3, 77, 126); }
-20%      { color: rgb(26, 75, 155); }
-30%      { color: rgb(4, 56, 80); }
-40%      { color: hsl(217, 67%, 31%); }
-50%      { color: hsl(221, 43%, 35%); }
-60%      { color: hsl(217, 57%, 32%); }
-70%      { color: hsl(216, 60%, 45%); }
-80%      { color: hsl(206, 70%, 26%); }
-90%      { color: hsl(215, 67%, 33%); }
-}
+// animation square
+// @supports (background-blend-mode: overlay) {
+// .square  {
+// background-image: linear-gradient(20deg,$bkg-color-second 5%,$bkg-color-first 95%);
+  // background-blend-mode: overlay;
+  // }
+  // }
+  
+  // @keyframes wheelHueColor {
+  // from, to { color: hsl(214, 68%, 27%); }
+  // 10%      { color: rgb(3, 77, 126); }
+  // 20%      { color: rgb(26, 75, 155); }
+  // 30%      { color: rgb(4, 56, 80); }
+  // 40%      { color: hsl(217, 67%, 31%); }
+  // 50%      { color: hsl(221, 43%, 35%); }
+  // 60%      { color: hsl(217, 57%, 32%); }
+  // 70%      { color: hsl(216, 60%, 45%); }
+  // 80%      { color: hsl(206, 70%, 26%); }
+  // 90%      { color: hsl(215, 67%, 33%); }
+  // }
 
 .square__container{
 background-color:$bkg-color-first;
@@ -103,6 +105,7 @@ height:6rem;
 }
   
 // RESPONSIVE
+
 @media (min-width:900px){
 .square__container{
 width:100%;
@@ -116,13 +119,13 @@ width:10rem;
 height:10rem;
 }
 
-.square{
+ .square{
 width:13rem;
 height:13rem;
 }
 
 h2{
-font-size:$font-size-l;
+font-size:$section-title-l;
 margin:2rem 1rem 1rem 3rem;
   }
 }

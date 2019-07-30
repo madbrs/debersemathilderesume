@@ -3,8 +3,8 @@
 }
 
 h4{
-font-family: 'azonix';
-font-size:1rem;
+font-family: $font-family-first;
+font-size:$asset-title-m;
 color:$text-color-first;
 width:8rem;
 height:8rem;
@@ -28,6 +28,8 @@ height:50px;
 
 .download__ptext {
 text-align:center;
+font-size:$button-font-size;
+text-transform: uppercase;
 }
 
 @media (min-width:900px){

@@ -7868,7 +7868,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%; }
 
 h4 {
-  font-family: 'azonix';
+  font-family: "azonix";
   font-size: 1rem;
   color: #ffffff;
   width: 8rem;
@@ -7890,7 +7890,9 @@ h4 {
   height: 50px; }
 
 .download__ptext {
-  text-align: center; }
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase; }
 
 @media (min-width: 900px) {
   .asset__section {
@@ -7908,17 +7910,12 @@ h4 {
     width: 70px;
     height: 70px; } }
 .skill__section {
-  width: 100%;
-  height: 140vh; }
+  width: 100%; }
 
 @media (min-width: 900px) {
   .skill__section {
     width: 100%;
     height: 90vh; } }
-.home__section {
-  height: 100vh;
-  color: white; }
-
 .video__container {
   width: 400px;
   display: flex;
@@ -7942,36 +7939,50 @@ h4 {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-color: #000000;
+  background-image: url("../img/mobilewelcome.jpg");
+  background-repeat: no-repeat;
   z-index: 1;
-  opacity: 0.5; }
+  opacity: 1; }
 
 .video__content {
-  z-index: 2;
   width: 70%;
   top: 50%;
-  margin: 1rem; }
+  margin: 1rem;
+  z-index: 2; }
 
 .video__content h1 {
-  font-family: 'azonix';
-  font-weight: 100;
+  font-family: "azonix";
   font-size: 2.5rem;
+  font-weight: 100;
   padding-bottom: 2rem; }
 
 .video__content p {
-  font-family: 'azonix';
+  font-family: "azonix";
   font-size: 1.2rem;
   display: block;
   padding-bottom: 2rem; }
 
 .btn--video {
-  font-family: 'rounded';
-  background: none;
+  font-family: "rounded";
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 0.86rem;
+  background: none;
   text-decoration: none; }
 
-@media (min-width: 500px) {
+@media (min-width: 360px) {
+  .video__container {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center; }
+
+  .video__content {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    margin: 1rem; } }
+@media (min-width: 900px) {
   .video__container {
     width: 100%;
     display: flex;
@@ -7985,35 +7996,20 @@ h4 {
     height: auto;
     margin: 1rem; }
 
-  .btn--video {
-    font-family: 'rounded';
-    background: none;
-    color: #ffffff;
-    font-size: 1vw;
-    text-decoration: none; } }
-@media (min-width: 900px) {
-  .video__container {
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    align-content: center; }
-
-  .video__content {
-    z-index: 2;
-    width: 100%;
-    height: auto;
-    margin: 1rem; } }
+  .video__overlay {
+    background-image: none;
+    background-color: black;
+    opacity: 0.8; } }
 .hello__section {
   height: 100vh; }
 
 .bg--dark {
   background-color: transparent;
-  font-family: 'azonix'; }
+  font-family: "azonix"; }
 
 .navbar-dark .navbar-nav .nav-link {
   font-size: 0.86rem;
-  color: white; }
+  color: #ffffff; }
 
 @media (min-width: 400px) {
   .hello__section {
@@ -8021,83 +8017,80 @@ h4 {
     height: 100vh; } }
 .header__section--about {
   width: 100%;
-  height: 2rem;
   background: none; }
 
 .about__section {
+  width: 100%;
   background-image: url("../img/img_about.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh; }
+  background-attachment: fixed; }
 
 .about__container {
   width: 100%;
-  height: 1000px;
+  height: 170vh;
   display: flex;
   align-items: center; }
 
 .about__overlay {
   position: absolute;
-  height: 1000px;
+  height: 170vh;
   width: 100%;
-  background: black;
+  background: #000000;
   opacity: 0.8;
   z-index: 1; }
 
 .about__content {
-  padding-top: 7rem;
+  padding-top: 10rem;
   position: absolute;
-  color: #ffffff;
   width: 100%;
   height: 150vh;
   z-index: 2; }
 
 .about__content p {
+  color: #ffffff;
   font-size: 0.86rem;
   text-align: justify;
   margin: 2rem 1rem 1rem 1rem; }
 
 @media (min-width: 900px) {
   .about__section {
-    background-attachment: scroll;
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    background-attachment: scroll; }
 
   .about__content {
-    padding-top: 8%;
-    margin-left: 45%;
     width: 40%;
-    height: 40rem; }
+    height: 40rem;
+    padding-top: 8%;
+    margin-left: 45%; }
 
   .about__overlay {
     width: 100%;
     height: 100vh;
     opacity: 0.4; } }
 .path__section {
-  width: 100%;
-  height: 240vh; }
+  width: 100%; }
 
 .path__container {
   width: 80%;
   margin: 0 2rem 5rem 2rem;
-  font-family: 'rounded'; }
+  font-family: "rounded"; }
 
 .path__container__title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   text-transform: uppercase;
   padding-bottom: 2rem; }
+
+.path__title {
+  font-size: 1rem; }
 
 .path__year {
   font-size: 0.86rem;
   color: #d3d1d1; }
 
-.path__title {
-  font-size: 1.2rem; }
-
 .path__location {
-  font-size: 1rem;
+  font-size: 0.86rem;
   font-style: italic;
   color: #8b8b8b;
   margin-bottom: 2rem;
@@ -8123,8 +8116,7 @@ h4 {
     grid-column: 2;
     width: 80%; } }
 .project__section {
-  width: 100%;
-  height: 100vh; }
+  width: 100%; }
 
 .project__container {
   position: relative;
@@ -8143,25 +8135,51 @@ img {
   transform: rotate(270deg);
   padding: 5px;
   font-size: 1.2rem;
-  text-transform: uppercase;
-  font-family: 'rounded'; }
+  font-family: "rounded";
+  text-transform: uppercase; }
 
 .project__title--l h6 {
   margin: 1rem;
-  font-family: 'azonix';
+  font-family: "azonix";
   font-size: 1.2rem; }
 
 .dot {
-  color: #157bef;
+  color: #01377e;
   font-size: 2.5rem; }
 
 button {
   border: none;
-  font-family: 'rounded';
+  font-family: "rounded";
+  font-size: 0.9rem;
   background-color: transparent;
+  text-transform: uppercase;
   color: #d3d1d1;
-  margin: 1rem 0 1rem 4rem; }
+  margin: 1rem 0 1rem 4.5rem; }
 
+@media (min-width: 375px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 8%; } }
+@media (min-width: 410px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 13%; } }
+@media (min-width: 480px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 15%; } }
+@media (min-width: 550px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 25%; } }
+@media (min-width: 700px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 27%; } }
+@media (min-width: 800px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 30%; } }
 @media (min-width: 900px) {
   .project__section {
     width: 100%;
@@ -8169,7 +8187,11 @@ button {
 
   .project__container {
     margin-top: 5%;
-    margin-left: 40%; } }
+    margin-left: 38%; } }
+@media (min-width: 1500px) {
+  .project__container {
+    margin-top: 5%;
+    margin-left: 42%; } }
 @font-face {
   font-family: 'azonix';
   src: url("../fonts/azonix/Azonix.otf") format("truetype"); }
@@ -8178,61 +8200,36 @@ button {
   src: url("../fonts/rounded_elegance/Rounded_Elegance.ttf") format("truetype"); }
 body {
   background-color: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  scroll-behavior: smooth; }
 
 h2 {
-  font-size: 1.2rem;
-  font-family: 'azonix';
+  font-size: 1.8rem;
+  font-family: "azonix";
   margin: 2rem 1rem 1rem 1rem; }
 
 p {
-  font-family: 'rounded'; }
+  font-family: "rounded"; }
 
 .header__section {
   width: 100%;
   height: 5rem; }
 
 .line--section {
-  color: #157bef;
+  color: #01377e;
   font-size: 2rem; }
 
 .line--small-title {
-  color: #157bef;
+  color: #01377e;
   font-size: 1.5rem; }
 
 .square {
   position: relative;
   width: 8rem;
   height: 8rem;
-  color: #075adf;
-  animation: wheelHueColor 10s infinite;
+  color: #011d41;
   background-color: currentColor; }
 
-@supports (background-blend-mode: overlay) {
-  .square {
-    background-image: linear-gradient(20deg, #ffffff 20%, #000000 80%);
-    background-blend-mode: overlay; } }
-@keyframes wheelHueColor {
-  from, to {
-    color: #163f74; }
-  10% {
-    color: #034d7e; }
-  20% {
-    color: #1a4b9b; }
-  30% {
-    color: #043850; }
-  40% {
-    color: #1a4384; }
-  50% {
-    color: #334b80; }
-  60% {
-    color: #234780; }
-  70% {
-    color: #2e65b8; }
-  80% {
-    color: #144871; }
-  90% {
-    color: #1c4b8d; } }
 .square__container {
   background-color: #000000;
   display: flex;
@@ -8281,7 +8278,7 @@ p {
     height: 13rem; }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 2rem 1rem 1rem 3rem; } }
 
 /*# sourceMappingURL=style.css.map */
