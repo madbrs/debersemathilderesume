@@ -1,0 +1,148 @@
+ 
+  @keyframes smoke {
+    0% {
+      opacity: 0;
+      transform: scale(1,1) translateY(0);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(1.1,1.5) translateY(-100px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.2,2) translateY(-200px);
+    }  
+  }
+  
+  .smoke__img--first {
+    display:block;
+    position: absolute;
+    top: 210px;
+    width: 300px;
+    height: 350px;
+    background-image: url('../img/mobilewelcome-s.jpg');
+    background-size: 100%;
+    animation: smoke 5s linear infinite;
+  }
+  
+  .smoke__img--second {
+    display:block;
+    position: absolute;
+    top: 240px;
+    width: 300px;
+    height: 350px;
+    background-image: url('../img/mobilewelcome-s.jpg');
+    background-size: 100%;
+    animation: smoke 4s 1s linear infinite;
+  }
+  
+  .smoke__img--third {
+    display:block;
+    position: absolute;
+    top: 240px;
+    width: 300px;
+    height: 350px;
+    background-image: url('../img/mobilewelcome-s.jpg');
+    background-size: 100%;
+    animation: smoke 4.5s 2s linear infinite;
+  }
+  @media (min-width:375px)
+  {
+    .smoke__img--first {
+      margin-left:25px;
+    }
+    .smoke__img--second{
+      margin-left:25px;
+    }
+
+    .smoke__img--third {
+      margin-left:25px;
+    }
+  }
+
+  @media (min-width:410px)
+  {
+    .smoke__img--first {
+      margin-left:50px;
+    }
+    .smoke__img--second{
+      margin-left:50px;
+    }
+
+    .smoke__img--third {
+      margin-left:50px;
+    }
+  }
+
+  @media (min-width:500px)
+  {
+    .smoke__img--first {
+      width: 500px;
+      height: 550px;
+     margin:0;
+    }
+    .smoke__img--second{
+      width: 500px;
+      height: 550px;
+    margin:0;
+    }
+
+    .smoke__img--third {
+      width: 500px;
+      height: 550px;
+      margin:0;
+    }
+  }
+  @media (min-width:600px)
+  {
+    .smoke__img--first {
+      width: 600px;
+      height: 650px;
+     margin:0;
+    }
+    .smoke__img--second{
+      width: 600px;
+      height: 650px;
+    margin:0;
+    }
+
+    .smoke__img--third {
+      width: 600px;
+      height: 650px;
+      margin:0;
+    }
+  }
+  @media (min-width:750px)
+  {
+    .smoke__img--first {
+      width: 790px;
+      height: 850px;
+     margin:0;
+    }
+    .smoke__img--second{
+    width: 790px;
+    height: 850px;
+    margin:0;
+    }
+
+    .smoke__img--third {
+      width: 790px;
+      height:850px;
+      margin:0;
+    }
+  }
+
+
+@media (min-width:900px)
+{
+    .smoke__img--first{
+        display:none;
+    }
+
+    .smoke__img--second{
+        display:none;
+    }
+    .smoke__img--third{
+        display:none;
+    }
+}

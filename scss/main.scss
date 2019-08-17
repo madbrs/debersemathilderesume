@@ -4,9 +4,9 @@
 @import "../node_modules/bootstrap/scss/root";
 
 $bkg-color-first:#000000;
-$square-bkg-color:hsl(214, 97%, 13%);
+$square-bkg-color:hsl(217, 100%, 12%);
 $overlay-video:hsl(0, 0%, 0%);
-$element-color:hsl(214, 98%, 25%);
+$element-color:hsl(217, 98%, 19%);
 $border-color:#20202a;
 $text-color-first:#ffffff;
 $text-color-second:#8b8b8b;
@@ -21,8 +21,8 @@ $p-size:0.86rem;
 $path-title-size:1rem;
 $path-year-size:0.86rem;
 $path-location-size:0.86rem;
-$asset-title-m:1rem;
-$asset-title-s:0.86rem;
+$asset-title-m:1.1rem;
+$asset-title-s:0.84rem;
 $button-font-size:0.90rem;
 $pjc-title-l:1.2rem;
 $pjc-dot:2.5rem;
@@ -30,7 +30,7 @@ $font-family-first:'azonix';
 $font-family-second:'rounded';
 
 
-
+@import "../scss/smoke-animation";
 @import "../scss/assets";
 @import "../scss/skill";
 @import "../scss/welcome";

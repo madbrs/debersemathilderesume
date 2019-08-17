@@ -7864,17 +7864,130 @@ a.text-dark:hover, a.text-dark:focus {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+@keyframes smoke {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1) translateY(0); }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1, 1.5) translateY(-100px); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2, 2) translateY(-200px); } }
+.smoke__img--first {
+  display: block;
+  position: absolute;
+  top: 210px;
+  width: 300px;
+  height: 350px;
+  background-image: url("../img/mobilewelcome-s.jpg");
+  background-size: 100%;
+  animation: smoke 5s linear infinite; }
+
+.smoke__img--second {
+  display: block;
+  position: absolute;
+  top: 240px;
+  width: 300px;
+  height: 350px;
+  background-image: url("../img/mobilewelcome-s.jpg");
+  background-size: 100%;
+  animation: smoke 4s 1s linear infinite; }
+
+.smoke__img--third {
+  display: block;
+  position: absolute;
+  top: 240px;
+  width: 300px;
+  height: 350px;
+  background-image: url("../img/mobilewelcome-s.jpg");
+  background-size: 100%;
+  animation: smoke 4.5s 2s linear infinite; }
+
+@media (min-width: 375px) {
+  .smoke__img--first {
+    margin-left: 25px; }
+
+  .smoke__img--second {
+    margin-left: 25px; }
+
+  .smoke__img--third {
+    margin-left: 25px; } }
+@media (min-width: 410px) {
+  .smoke__img--first {
+    margin-left: 50px; }
+
+  .smoke__img--second {
+    margin-left: 50px; }
+
+  .smoke__img--third {
+    margin-left: 50px; } }
+@media (min-width: 500px) {
+  .smoke__img--first {
+    width: 500px;
+    height: 550px;
+    margin: 0; }
+
+  .smoke__img--second {
+    width: 500px;
+    height: 550px;
+    margin: 0; }
+
+  .smoke__img--third {
+    width: 500px;
+    height: 550px;
+    margin: 0; } }
+@media (min-width: 600px) {
+  .smoke__img--first {
+    width: 600px;
+    height: 650px;
+    margin: 0; }
+
+  .smoke__img--second {
+    width: 600px;
+    height: 650px;
+    margin: 0; }
+
+  .smoke__img--third {
+    width: 600px;
+    height: 650px;
+    margin: 0; } }
+@media (min-width: 750px) {
+  .smoke__img--first {
+    width: 790px;
+    height: 850px;
+    margin: 0; }
+
+  .smoke__img--second {
+    width: 790px;
+    height: 850px;
+    margin: 0; }
+
+  .smoke__img--third {
+    width: 790px;
+    height: 850px;
+    margin: 0; } }
+@media (min-width: 900px) {
+  .smoke__img--first {
+    display: none; }
+
+  .smoke__img--second {
+    display: none; }
+
+  .smoke__img--third {
+    display: none; } }
 .asset__section {
   width: 100%; }
 
 h4 {
   font-family: "azonix";
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ffffff;
   width: 8rem;
   height: 8rem;
   line-height: 8rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .download__container {
   margin-top: 3rem;
@@ -7909,13 +8022,40 @@ h4 {
   .download__container .download__img img {
     width: 70px;
     height: 70px; } }
-.skill__section {
-  width: 100%; }
+.square__p {
+  display: none;
+  font-family: "azonix";
+  font-size: 0.84rem;
+  color: #ffffff;
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.square:hover .square__img {
+  display: none;
+  visibility: hidden; }
+
+.square:hover .square__p {
+  display: block;
+  font-size: 0.65rem;
+  text-decoration: none; }
 
 @media (min-width: 900px) {
   .skill__section {
-    width: 100%;
-    height: 90vh; } }
+    height: 550px; }
+
+  .square__p {
+    width: 13rem;
+    height: 13rem;
+    line-height: 13rem; }
+
+  .square:hover .square__p {
+    font-size: 1.1rem; } }
+.home__section {
+  height: 100vh; }
+
 .video__container {
   width: 400px;
   display: flex;
@@ -7927,34 +8067,31 @@ h4 {
 
 .video__wrapper {
   position: absolute;
-  width: 100%;
   height: 100vh;
-  overflow: hidden; }
-
-.fullscreen-video__wrapper video {
-  min-width: 100%;
-  min-height: 100%; }
+  width: 100%;
+  overflow: hidden;
+  display: none; }
 
 .video__overlay {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background-image: url("../img/mobilewelcome.jpg");
-  background-repeat: no-repeat;
   z-index: 1;
   opacity: 1; }
 
 .video__content {
+  position: absolute;
+  z-index: 2;
   width: 70%;
-  top: 50%;
-  margin: 1rem;
-  z-index: 2; }
+  top: 60%;
+  margin: 3rem; }
 
 .video__content h1 {
   font-family: "azonix";
   font-size: 2.5rem;
   font-weight: 100;
-  padding-bottom: 2rem; }
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem; }
 
 .video__content p {
   font-family: "azonix";
@@ -7981,7 +8118,7 @@ h4 {
     z-index: 2;
     width: 100%;
     height: auto;
-    margin: 1rem; } }
+    margin-left: 0.5rem; } }
 @media (min-width: 900px) {
   .video__container {
     width: 100%;
@@ -7993,19 +8130,26 @@ h4 {
   .video__content {
     z-index: 2;
     width: 100%;
-    height: auto;
     margin: 1rem; }
 
   .video__overlay {
     background-image: none;
     background-color: black;
-    opacity: 0.8; } }
+    opacity: 0.8; }
+
+  .video__wrapper {
+    display: block; }
+
+  .img__responsive {
+    visibility: hidden; } }
 .hello__section {
-  height: 100vh; }
+  height: 110vh; }
 
 .bg--dark {
+  text-align: center;
   background-color: transparent;
-  font-family: "azonix"; }
+  font-family: "azonix";
+  z-index: 3; }
 
 .navbar-dark .navbar-nav .nav-link {
   font-size: 0.86rem;
@@ -8144,7 +8288,7 @@ img {
   font-size: 1.2rem; }
 
 .dot {
-  color: #01377e;
+  color: #012560;
   font-size: 2.5rem; }
 
 button {
@@ -8209,27 +8353,32 @@ h2 {
   margin: 2rem 1rem 1rem 1rem; }
 
 p {
-  font-family: "rounded"; }
+  font-family: "rounded";
+  text-decoration: none; }
 
 .header__section {
   width: 100%;
   height: 5rem; }
 
 .line--section {
-  color: #01377e;
+  color: #012560;
   font-size: 2rem; }
 
 .line--small-title {
-  color: #01377e;
+  color: #012560;
   font-size: 1.5rem; }
 
 .square {
-  position: relative;
   width: 8rem;
   height: 8rem;
-  color: #011d41;
-  background-color: currentColor; }
+  color: #00173d;
+  background-color: currentColor;
+  animation: wheelHueColor 10s infinite; }
 
+@supports (background-blend-mode: overlay) {
+  .square {
+    background-image: linear-gradient(20deg, #ffffff 5%, #000000 95%);
+    background-blend-mode: overlay; } }
 .square__container {
   background-color: #000000;
   display: flex;
@@ -8255,7 +8404,8 @@ p {
   -ms-flex-direction: column;
   flex-flow: row wrap;
   display: -webkit-box;
-  -webkit-flex-flow: row wrap; }
+  -webkit-flex-flow: row wrap;
+  display: block; }
 
 .square__img {
   width: 6rem;
