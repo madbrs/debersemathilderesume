@@ -1,5 +1,5 @@
-.square__p{
-  display:none;
+.square__p {
+  display: none;
   font-family: $font-family-first;
   font-size: $asset-title-s;
   color: $text-color-first;
@@ -9,31 +9,34 @@
   text-align: center;
   text-transform: uppercase;
 }
-.square:hover .square__img{
- 
-  display:none;
+
+.square:hover .square__img {
+
+  display: none;
   visibility: hidden;
 }
 
-.square:hover .square__p{
-  display:block;
-  font-size:0.65rem;
+.square:hover .square__p {
+  display: block;
+  font-size: 0.65rem;
 }
 
 
 
 @media (min-width:900px) {
 
-  .skill__section{
-    height:550px;
+  .skill__section {
+    height: 550px;
   }
-  .square__p{
+
+  .square__p {
     width: 13rem;
-    height:13rem;
+    height: 13rem;
     line-height: 13rem;
 
   }
-  .square:hover .square__p{
-    font-size:1.1rem;
+
+  .square:hover .square__p {
+    font-size: 1.1rem;
   }
 }
