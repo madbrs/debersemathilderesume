@@ -43,6 +43,21 @@
 
 
 //    Responsive
+@media (min-width:375px) {
+    .about__section {
+        height: 120vh;
+    }
+
+    .about__overlay {
+        height: 120vh;
+    }
+    .about__content {
+        height: 100vh;
+    }
+
+}
+
+
 @media (min-width:900px) {
     .about__section {
         width: 100%;

@@ -1,3 +1,5 @@
+// NAV BAR
+
 .hello__section {
     height: 110vh;
 }
@@ -6,7 +8,7 @@
     text-align: center;
     background-color: transparent;
     font-family: $font-family-first;
-    z-index:3;
+    z-index: 3;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -14,10 +16,145 @@
     color: $text-color-first;
 }
 
-@media (min-width:400px) {
-    .hello__section {
+// VIDEO - TITLE
+.video__container {
+    width: 400px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.video__wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.video__overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+}
+
+.video__content {
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    top: 60%;
+    margin:3rem;
+}
+
+.video__content h1 {
+    font-family: $font-family-first;
+    font-size: $welcome-title-l;
+    font-weight: 100;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.video__content p {
+    font-family: $font-family-first;
+    font-size: $welcome-title-m;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.btn--video {
+    font-family: $font-family-second;
+    color: $text-color-first;
+    font-size: $welcome-title-s;
+    background: none;
+    text-decoration: none;
+}
+
+// RESPONSIVE
+
+@media (min-width:360px) {
+    .video__container {
         width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media (min-width:375px) {
+    .hello__section {
+        height: 80vh;
+    }
+
+    .video__content {
+        top: 45%;
+    }
+
+    .video__content {
+        margin:4rem;
+    }
+}
+
+@media (min-width:414px) {
+    .hello__section {
+        height: 75vh;
+    }
+
+    .video__content {
+        top: 40%;
+        margin:4rem;
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .hello__section {
+        height: 80vh;
+    }
+
+    .video__content {
+        top: 30%;
+        margin:7.5rem;
+    }
+}
+
+@media (min-width:900px) {
+    .hello__section {
         height: 100vh;
     }
 
+    .video__container {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .video__content {
+        z-index: 2;
+        width: 100%;
+        top: 45%;
+    }
+
+    .video__overlay {
+
+        background-image: none;
+        background-color: $overlay-video;
+        opacity: 0.8;
+    }
+
+    .video__wrapper {
+        display: block;
+    }
+
+    .img__responsive {
+        visibility: hidden;
+    }
 }
