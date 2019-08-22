@@ -8165,8 +8165,8 @@ h4 {
 
   .video__content {
     z-index: 2;
-    width: 100%;
-    top: 45%; }
+    top: 35%;
+    width: 85%; }
 
   .video__overlay {
     background-image: none;
@@ -8179,17 +8179,14 @@ h4 {
   .img__responsive {
     visibility: hidden; } }
 .header__section--about {
-  width: 100%;
   background: none; }
 
 .about__section {
-  width: 100%;
   background-image: url("../img/img_about.png");
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
 .about__container {
-  width: 100%;
   height: 170vh;
   display: flex;
   align-items: center; }
