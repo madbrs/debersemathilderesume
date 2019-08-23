@@ -7983,9 +7983,6 @@ a.text-dark:hover, a.text-dark:focus {
 @font-face {
   font-family: 'rounded';
   src: url("../fonts/rounded_elegance/Rounded_Elegance.ttf") format("truetype"); }
-.asset__section {
-  width: 100%; }
-
 h4 {
   font-family: "azonix";
   font-size: 1.1rem;
@@ -7996,28 +7993,10 @@ h4 {
   text-align: center;
   text-transform: uppercase; }
 
-.download__container {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto; }
-
-.download__container .download__img img {
-  width: 50px;
-  height: 50px; }
-
-.download__ptext {
-  text-align: center;
-  font-size: 0.9rem;
-  text-transform: uppercase; }
-
 @media (min-width: 900px) {
   .asset__section {
     width: 100%;
-    height: 70vh; }
+    height: 50vh; }
 
   h4 {
     font-size: 1.2rem;
@@ -8093,7 +8072,7 @@ h4 {
   width: 100vw;
   position: absolute;
   z-index: 1;
-  opacity: 1; }
+  opacity: 0.1; }
 
 .video__content {
   position: absolute;
@@ -8121,6 +8100,26 @@ h4 {
   font-size: 0.86rem;
   background: none;
   text-decoration: none; }
+
+.download__container {
+  position: absolute;
+  z-index: 3;
+  margin-top: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; }
+
+.download__container .download__img img {
+  width: 40px;
+  height: 40px; }
+
+.download__ptext {
+  text-align: center;
+  font-size: 0.74rem;
+  text-transform: uppercase; }
 
 @media (min-width: 360px) {
   .video__container {
@@ -8307,23 +8306,19 @@ img {
   font-family: "rounded";
   text-transform: uppercase; }
 
-.project__title--l h6 {
-  margin: 1rem;
-  font-family: "azonix";
-  font-size: 1.2rem; }
-
 .dot {
   color: #012560;
   font-size: 2.5rem; }
 
 button {
+  font-family: "azonix";
+  font-size: 1.2rem;
   border: none;
   font-family: "rounded";
-  font-size: 0.9rem;
   background-color: transparent;
   text-transform: uppercase;
   color: #d3d1d1;
-  margin: 1rem 0 1rem 4.5rem; }
+  margin: 1rem 0 1rem 1rem; }
 
 @media (min-width: 375px) {
   .project__container {
@@ -8455,5 +8450,73 @@ a:link {
   .square {
     width: 13rem;
     height: 13rem; } }
+.sticky__contact {
+  display: none; }
+
+@media (min-width: 900px) {
+  .sticky__contact {
+    z-index: 999999;
+    top: 0.90rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateX(100%);
+    transition: 0.2s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .sticky__contact:before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: -45px;
+      width: 58px;
+      height: 48px;
+      transform: translateY(-50%); }
+    .sticky__contact:hover {
+      transform: translateX(0%); }
+      .sticky__contact:hover .sticky__contact__text {
+        opacity: 1; }
+    .sticky__contact__thumbnail {
+      position: absolute;
+      left: -55px;
+      background: #000000;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #000000;
+      border-radius: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+      transform: translateY(-50%);
+      overflow: hidden;
+      cursor: pointer; }
+      .sticky__contact__thumbnail img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%; }
+    .sticky__contact__text {
+      opacity: 0;
+      transition: 0.2s ease; }
+      .sticky__contact__text h2,
+      .sticky__contact__text p {
+        margin: 0;
+        padding: 0; }
+      .sticky__contact__text h2 {
+        text-align: left;
+        color: #d3d1d1;
+        font-size: 0.86rem;
+        font-weight: 600; }
+      .sticky__contact__text p {
+        text-align: left;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 400; }
+      .sticky__contact__text a {
+        color: inherit;
+        font-weight: 400;
+        text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,15 @@
+.container__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact__footer p{
+    font-family: $font-family-second;
+    font-size: $asset-title-s;
+    color: $text-color-first;
+    text-align: center;
+}
 @media (min-width:900px) {
     .contact__section {
         width: 100%;

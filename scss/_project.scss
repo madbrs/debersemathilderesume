@@ -25,11 +25,6 @@ img {
     text-transform: uppercase;
 }
 
-.project__title--l h6 {
-    margin: 1rem;
-    font-family: $font-family-first;
-    font-size: $pjc-title-l;
-}
 
 .dot {
     color: $element-color;
@@ -37,13 +32,14 @@ img {
 }
 
 button {
+    font-family: $font-family-first;
+    font-size: $pjc-title-l;
     border: none;
     font-family: $font-family-second;
-    font-size: $button-font-size;
     background-color: transparent;
     text-transform: uppercase;
     color: $text-color-third;
-    margin: 1rem 0 1rem 4.5rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
 
