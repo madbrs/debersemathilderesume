@@ -78,7 +78,7 @@
 .download__container {
     position: absolute;
     z-index: 3;
-    margin-top: 15rem;
+    margin-top: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +182,9 @@
     .img__responsive {
         visibility: hidden;
     }
-
+    .download__container {
+        margin-top:15rem;
+    }
     .download__container .download__img img {
         width: 70px;
         height: 70px;
