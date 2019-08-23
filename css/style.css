@@ -8165,7 +8165,7 @@ h4 {
   .video__content {
     z-index: 2;
     top: 35%;
-    width: 85%; }
+    width: 83%; }
 
   .video__overlay {
     background-image: none;
@@ -8507,16 +8507,13 @@ a:link {
       .sticky__contact__text h2 {
         text-align: left;
         color: #d3d1d1;
-        font-size: 0.86rem;
-        font-weight: 600; }
+        font-size: 0.86rem; }
       .sticky__contact__text p {
         text-align: left;
         color: #ffffff;
-        font-size: 1rem;
-        font-weight: 400; }
+        font-size: 1rem; }
       .sticky__contact__text a {
         color: inherit;
-        font-weight: 400;
         text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */
