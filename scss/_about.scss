@@ -19,7 +19,7 @@
     height: 170vh;
     width: 100%;
     background: $bkg-color-first;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: 1;
 }
 
@@ -42,15 +42,15 @@
 //    Responsive
 @media (min-width:375px) {
     .about__section {
-        height: 120vh;
+        height: 145vh;
     }
 
     .about__overlay {
-        height: 120vh;
+        height: 145vh;
     }
 
     .about__content {
-        height: 100vh;
+        height: 145vh;
     }
 
 }

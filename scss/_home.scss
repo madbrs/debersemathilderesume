@@ -18,6 +18,7 @@
 
 // VIDEO - TITLE
 .video__container {
+    height: 110vh;
     width: 400px;
     display: flex;
     justify-items: center;
@@ -102,6 +103,7 @@
 // RESPONSIVE
 
 @media (min-width:360px) {
+
     .video__container {
         width: 100%;
         display: flex;
