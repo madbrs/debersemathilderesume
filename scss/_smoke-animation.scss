@@ -139,6 +139,26 @@
    }
  }
 
+ @media (min-width:840px) {
+  .smoke__img--first {
+    width: 840px;
+    height: 950px;
+    margin: 0;
+  }
+
+  .smoke__img--second {
+    width: 840px;
+    height: 950px;
+    margin: 0;
+  }
+
+  .smoke__img--third {
+    width: 840px;
+    height: 950px;
+    margin: 0;
+  }
+}
+
  @media (min-width:900px) {
    .smoke__img--first {
      display: none;

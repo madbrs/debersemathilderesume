@@ -80,7 +80,7 @@
 .download__container {
     position: absolute;
     z-index: 3;
-    margin-top: 25rem;
+    margin-top: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,7 @@
 
 }
 
-// RESPONSIVE
+// RESPONSIVE WIDTH
 
 @media (min-width:360px) {
 
@@ -121,9 +121,8 @@
 
     .video__content {
         top: 45%;
+        margin-left:15vw;
     }
-
-
 }
 
 @media (min-width:414px) {
@@ -147,6 +146,12 @@
     .video__content {
         top: 30%;
         margin: 7.5rem;
+    }
+
+    .download__container .download__img img {
+        width: 50px;
+        height: 50px;
+        margin-top: 1rem;
     }
 }
 
@@ -200,5 +205,27 @@
         width: 50px;
         height: 50px;
         margin-top: 1rem;
+    }
+}
+
+// RESPONSIVE HEIGHT
+
+@media (min-height:640px) {
+    .download__container {
+        margin-top: 60vh;
+    }
+    .hello__section {
+        height: 120vh;
+    }
+}
+
+@media (min-height:667px) {
+    .download__container {
+        margin-top: 50vh;
+    }
+}
+@media (min-height:846px) {
+    .download__container {
+        margin-top: 40vh;
     }
 }

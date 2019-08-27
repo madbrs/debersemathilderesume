@@ -7968,6 +7968,21 @@ a.text-dark:hover, a.text-dark:focus {
     width: 790px;
     height: 850px;
     margin: 0; } }
+@media (min-width: 840px) {
+  .smoke__img--first {
+    width: 840px;
+    height: 950px;
+    margin: 0; }
+
+  .smoke__img--second {
+    width: 840px;
+    height: 950px;
+    margin: 0; }
+
+  .smoke__img--third {
+    width: 840px;
+    height: 950px;
+    margin: 0; } }
 @media (min-width: 900px) {
   .smoke__img--first {
     display: none; }
@@ -8165,7 +8180,7 @@ h4 {
 .download__container {
   position: absolute;
   z-index: 3;
-  margin-top: 25rem;
+  margin-top: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8194,7 +8209,8 @@ h4 {
     height: 100vh; }
 
   .video__content {
-    top: 45%; } }
+    top: 45%;
+    margin-left: 15vw; } }
 @media (min-width: 414px) {
   .hello__section {
     height: 100vh; }
@@ -8208,7 +8224,12 @@ h4 {
 
   .video__content {
     top: 30%;
-    margin: 7.5rem; } }
+    margin: 7.5rem; }
+
+  .download__container .download__img img {
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem; } }
 @media (min-width: 900px) {
   .video__overlay {
     width: 100vw;
@@ -8248,6 +8269,18 @@ h4 {
     width: 50px;
     height: 50px;
     margin-top: 1rem; } }
+@media (min-height: 640px) {
+  .download__container {
+    margin-top: 60vh; }
+
+  .hello__section {
+    height: 120vh; } }
+@media (min-height: 667px) {
+  .download__container {
+    margin-top: 50vh; } }
+@media (min-height: 846px) {
+  .download__container {
+    margin-top: 40vh; } }
 .header__section--about {
   background: none; }
 
@@ -8266,7 +8299,7 @@ h4 {
   height: 170vh;
   width: 100%;
   background: #000000;
-  opacity: 0.4;
+  opacity: 0.3;
   z-index: 1; }
 
 .about__content {
@@ -8381,7 +8414,7 @@ img {
   color: #012560;
   font-size: 2.5rem; }
 
-button {
+.btn {
   font-family: "azonix";
   font-size: 1.2rem;
   border: none;
