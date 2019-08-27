@@ -8263,6 +8263,9 @@ h4 {
 @media (min-height: 480px) {
   .hello__section {
     height: 120vh; } }
+@media (min-height: 495px) {
+  .hello__section {
+    height: 90vh; } }
 @media (min-height: 640px) {
   .hello__section {
     height: 115vh; }
