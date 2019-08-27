@@ -8205,23 +8205,14 @@ h4 {
     align-items: center;
     align-content: center; } }
 @media (min-width: 375px) {
-  .hello__section {
-    height: 100vh; }
-
   .video__content {
     top: 45%;
     margin-left: 15vw; } }
 @media (min-width: 414px) {
-  .hello__section {
-    height: 100vh; }
-
   .video__content {
     top: 40%;
     margin: 4rem; } }
 @media (min-width: 768px) {
-  .hello__section {
-    height: 100vh; }
-
   .video__content {
     top: 30%;
     margin: 7.5rem; }
@@ -8269,15 +8260,24 @@ h4 {
     width: 50px;
     height: 50px;
     margin-top: 1rem; } }
-@media (min-height: 640px) {
-  .download__container {
-    margin-top: 60vh; }
-
+@media (min-height: 480px) {
   .hello__section {
     height: 120vh; } }
+@media (min-height: 640px) {
+  .hello__section {
+    height: 115vh; }
+
+  .download__container {
+    margin-top: 70vh; } }
 @media (min-height: 667px) {
   .download__container {
-    margin-top: 50vh; } }
+    margin-top: 60vh; } }
+@media (min-height: 740px) {
+  .download__container {
+    margin-top: 65vh; } }
+@media (min-height: 812px) {
+  .hello__section {
+    height: 100vh; } }
 @media (min-height: 846px) {
   .download__container {
     margin-top: 40vh; } }
@@ -8604,14 +8604,15 @@ a:link {
     .sticky__contact__text {
       opacity: 0;
       transition: 0.2s ease; }
-      .sticky__contact__text h2,
+      .sticky__contact__text h5,
       .sticky__contact__text p {
         margin: 0;
         padding: 0; }
-      .sticky__contact__text h2 {
+      .sticky__contact__text h5 {
         text-align: left;
         color: #d3d1d1;
-        font-size: 0.86rem; }
+        font-size: 0.86rem;
+        font-family: "rounded"; }
       .sticky__contact__text p {
         text-align: left;
         color: #ffffff;

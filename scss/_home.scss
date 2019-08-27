@@ -115,9 +115,6 @@
 }
 
 @media (min-width:375px) {
-    .hello__section {
-        height: 100vh;
-    }
 
     .video__content {
         top: 45%;
@@ -126,10 +123,6 @@
 }
 
 @media (min-width:414px) {
-    .hello__section {
-        height: 100vh;
-    }
-
     .video__content {
         top: 40%;
         margin: 4rem;
@@ -139,9 +132,6 @@
 
 
 @media (min-width:768px) {
-    .hello__section {
-        height: 100vh;
-    }
 
     .video__content {
         top: 30%;
@@ -210,18 +200,37 @@
 
 // RESPONSIVE HEIGHT
 
-@media (min-height:640px) {
-    .download__container {
-        margin-top: 60vh;
-    }
+@media (min-height:480px) {
     .hello__section {
         height: 120vh;
     }
 }
 
+@media (min-height:640px) {
+    .hello__section {
+        height: 115vh;
+    }
+    .download__container {
+        margin-top: 70vh;
+    }
+}
+
 @media (min-height:667px) {
     .download__container {
-        margin-top: 50vh;
+        margin-top: 60vh;
+    }
+}
+
+@media (min-height:740px) {
+    .download__container {
+        margin-top: 65vh;
+    }
+}
+
+@media (min-height:812px) {
+
+    .hello__section {
+        height: 100vh;
     }
 }
 @media (min-height:846px) {

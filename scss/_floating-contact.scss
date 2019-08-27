@@ -62,16 +62,17 @@
     opacity: 0;
     transition: 0.2s ease;
     
-    h2,
+    h5,
     p {
       margin: 0;
       padding: 0;
     }
     
-    h2 {
+    h5 {
       text-align:left;
       color: $text-color-third;
       font-size: $sticky-contact-s;
+      font-family:$font-family-second;
     }
     
     p {
