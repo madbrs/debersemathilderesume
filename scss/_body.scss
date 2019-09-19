@@ -2,6 +2,7 @@ body {
   background-color: $bkg-color-first;
   color: $text-color-first;
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 h2 {

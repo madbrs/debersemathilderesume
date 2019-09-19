@@ -8466,8 +8466,7 @@ img {
 body {
   background-color: #000000;
   color: #ffffff;
-  scroll-behavior: smooth;
-  overflow-x: hidden; }
+  scroll-behavior: smooth; }
 
 h2 {
   font-size: 1.8rem;
@@ -8625,4 +8624,4 @@ a:link {
         color: inherit;
         text-decoration: none; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
